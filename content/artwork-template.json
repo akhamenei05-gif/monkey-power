@@ -1,0 +1,18 @@
+{
+  "id": "mp-012",
+  "number": "MP 0012",
+  "title": "Artwork title",
+  "year": "2026",
+  "description": "Short English description.",
+  "alt": "Accessible English description of the artwork",
+  "source": "mp-012-original.png",
+  "order": 12,
+  "featured": false,
+  "status": "published",
+  "artist": "Monkey Power",
+  "license": "All rights reserved",
+  "tags": [
+    "digital art",
+    "monkey power"
+  ]
+}
