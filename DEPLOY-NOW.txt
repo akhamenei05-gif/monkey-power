@@ -1,5 +1,0 @@
-1. In Cloudflare, choose Upload your static files.
-2. Upload this entire folder.
-3. Click Deploy.
-4. Open the project, then Settings / Custom domains.
-5. Add monkeypower.art.
