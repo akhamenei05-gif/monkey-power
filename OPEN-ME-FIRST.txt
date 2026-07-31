@@ -1,2 +1,0 @@
-Open index.html in a browser for a local preview.
-For full service-worker/PWA behavior, run the folder through a local or online web server.
