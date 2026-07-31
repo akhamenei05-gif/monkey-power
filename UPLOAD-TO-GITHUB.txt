@@ -1,0 +1,9 @@
+MONKEY POWER v6 — GITHUB UPLOAD
+
+Upload ALL files and folders from this directory to the ROOT of the monkey-power repository.
+Do not upload the containing Monkey-Power-v6-Ultimate folder itself.
+
+Important:
+- assets/art contains exactly 77 artwork files.
+- _redirects is intentionally removed for Cloudflare Workers static assets.
+- After commit, wait for Cloudflare deployment success, then hard refresh with Ctrl+F5.
