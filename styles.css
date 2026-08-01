@@ -77,3 +77,37 @@ body.viewer-open{overflow:hidden}
 @keyframes shimmer{to{background-position:-220% 0}}
 @media(max-width:620px){.gallery-grid{columns:2 145px;column-gap:10px}.art-card{margin-bottom:10px;border-radius:11px}.art-meta{opacity:1;padding:34px 10px 10px}.art-meta strong{font-size:11px}.art-meta span{font-size:9px}.filters{flex-wrap:nowrap;overflow:auto;padding-bottom:4px}.filter{white-space:nowrap}}
 @media(prefers-reduced-motion:reduce){.art-card::before{animation:none}}
+/* Smaller homepage hero artwork */
+@media (min-width: 901px) {
+  .hero {
+    grid-template-columns: minmax(0, 1.08fr) minmax(460px, 0.82fr);
+    gap: clamp(48px, 6vw, 110px);
+    align-items: center;
+  }
+
+  .hero-media,
+  .hero-image {
+    width: 86%;
+    max-width: 680px;
+    justify-self: end;
+    margin-right: clamp(20px, 3vw, 60px);
+  }
+
+  .hero-media img,
+  .hero-image img,
+  img.hero-image {
+    width: 100%;
+    height: auto;
+    max-height: calc(100vh - 155px);
+    object-fit: contain;
+    border-radius: 18px;
+    transition: transform 0.45s ease, box-shadow 0.45s ease;
+  }
+
+  .hero-media:hover img,
+  .hero-image:hover img,
+  img.hero-image:hover {
+    transform: scale(1.015);
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.12);
+  }
+}
