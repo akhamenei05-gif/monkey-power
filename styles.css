@@ -111,3 +111,28 @@ body.viewer-open{overflow:hidden}
     box-shadow: 0 24px 60px rgba(0, 0, 0, 0.12);
   }
 }
+/* Homepage hero image — original proportions, no stretching */
+@media (min-width: 901px) {
+  .hero-media,
+  .hero-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+    height: auto;
+    min-height: 0;
+  }
+
+  .hero-media img,
+  .hero-image img,
+  img.hero-image {
+    width: auto !important;
+    height: auto !important;
+    max-width: 620px !important;
+    max-height: 72vh !important;
+    object-fit: contain !important;
+    object-position: center !important;
+    display: block;
+    border-radius: 16px;
+  }
+}
