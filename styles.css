@@ -297,3 +297,44 @@ body.viewer-open{overflow:hidden}
     object-fit: contain !important;
   }
 }
+/* HERO PORTRAIT — SHOW FULL ARTWORK */
+@media (min-width: 901px) {
+
+  .hero-media,
+  .hero-image {
+    width: 100% !important;
+    max-width: 560px !important;
+
+    height: auto !important;
+    max-height: none !important;
+
+    justify-self: end !important;
+    align-self: center !important;
+
+    overflow: visible !important;
+    border-radius: 20px !important;
+
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .hero-media img,
+  .hero-image img,
+  img.hero-image {
+    width: 100% !important;
+    height: auto !important;
+
+    max-width: 560px !important;
+    max-height: calc(100vh - 165px) !important;
+
+    object-fit: contain !important;
+    object-position: center !important;
+
+    display: block !important;
+    margin: 0 auto !important;
+
+    border-radius: 20px !important;
+    transform: none !important;
+  }
+}
