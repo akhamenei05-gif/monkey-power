@@ -338,3 +338,74 @@ body.viewer-open{overflow:hidden}
     transform: none !important;
   }
 }
+/* FINAL FIX: full square hero artwork without cropping */
+@media (min-width: 901px) {
+
+  .hero {
+    min-height: calc(100vh - 110px) !important;
+    height: calc(100vh - 110px) !important;
+    align-items: center !important;
+    overflow: hidden !important;
+  }
+
+  /* Контейнер изображения */
+  .hero > div:last-child,
+  .hero-media,
+  .hero-image-wrapper,
+  .hero-art,
+  .hero-visual {
+    width: min(42vw, 610px) !important;
+    height: auto !important;
+    max-height: none !important;
+    aspect-ratio: 1 / 1 !important;
+    align-self: center !important;
+    justify-self: end !important;
+    overflow: visible !important;
+    margin: 0 !important;
+  }
+
+  /* Само изображение */
+  .hero img,
+  .hero-media img,
+  .hero-image-wrapper img,
+  .hero-art img,
+  .hero-visual img,
+  img.hero-image {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 610px !important;
+    max-height: calc(100vh - 160px) !important;
+    aspect-ratio: 1 / 1 !important;
+
+    object-fit: contain !important;
+    object-position: center center !important;
+
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    transform: none !important;
+    border-radius: 18px !important;
+  }
+}
+
+/* Для небольших экранов ноутбуков */
+@media (min-width: 901px) and (max-height: 850px) {
+  .hero > div:last-child,
+  .hero-media,
+  .hero-image-wrapper,
+  .hero-art,
+  .hero-visual {
+    width: min(38vw, 520px) !important;
+  }
+
+  .hero img,
+  .hero-media img,
+  .hero-image-wrapper img,
+  .hero-art img,
+  .hero-visual img,
+  img.hero-image {
+    max-width: 520px !important;
+    max-height: calc(100vh - 145px) !important;
+  }
+}
