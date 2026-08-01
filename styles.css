@@ -136,3 +136,164 @@ body.viewer-open{overflow:hidden}
     border-radius: 16px;
   }
 }
+/* ==================================================
+   HOMEPAGE HERO — FIT ENTIRELY INSIDE FIRST SCREEN
+   ================================================== */
+
+@media (min-width: 901px) {
+
+  .hero {
+    box-sizing: border-box !important;
+
+    display: grid !important;
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(420px, 0.82fr) !important;
+
+    align-items: center !important;
+    gap: clamp(45px, 5vw, 90px) !important;
+
+    /* Высота экрана минус шапка */
+    min-height: calc(100svh - 110px) !important;
+    height: calc(100svh - 110px) !important;
+
+    padding:
+      clamp(24px, 3vh, 42px)
+      clamp(40px, 4vw, 72px) !important;
+
+    margin: 0 !important;
+    overflow: hidden !important;
+  }
+
+  .hero-copy,
+  .hero-content,
+  .hero-text {
+    align-self: center !important;
+    max-width: 700px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .hero h1,
+  .hero-title {
+    font-size: clamp(58px, 5.4vw, 96px) !important;
+    line-height: 0.94 !important;
+    letter-spacing: -0.055em !important;
+
+    margin-top: 28px !important;
+    margin-bottom: 30px !important;
+  }
+
+  .hero-copy p,
+  .hero-content p,
+  .hero-description {
+    font-size: clamp(18px, 1.45vw, 25px) !important;
+    line-height: 1.55 !important;
+    margin-bottom: 28px !important;
+  }
+
+  .hero-media,
+  .hero-image {
+    width: 100% !important;
+    max-width: 610px !important;
+
+    height: min(68vh, 680px) !important;
+    max-height: min(68vh, 680px) !important;
+
+    justify-self: end !important;
+    align-self: center !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    overflow: hidden !important;
+    border-radius: 22px !important;
+  }
+
+  .hero-media img,
+  .hero-image img,
+  img.hero-image {
+    width: 100% !important;
+    height: 100% !important;
+
+    /* Показывает изображение полностью */
+    object-fit: contain !important;
+    object-position: center !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block !important;
+
+    transform: none !important;
+  }
+}
+
+
+/* Невысокие экраны ноутбуков */
+@media (min-width: 901px) and (max-height: 800px) {
+
+  .hero {
+    min-height: calc(100svh - 96px) !important;
+    height: calc(100svh - 96px) !important;
+    padding-top: 18px !important;
+    padding-bottom: 18px !important;
+  }
+
+  .hero h1,
+  .hero-title {
+    font-size: clamp(52px, 5vw, 78px) !important;
+    margin-top: 18px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .hero-media,
+  .hero-image {
+    max-width: 530px !important;
+    height: min(65vh, 570px) !important;
+    max-height: min(65vh, 570px) !important;
+  }
+}
+
+
+/* Планшеты и телефоны */
+@media (max-width: 900px) {
+
+  .hero {
+    display: flex !important;
+    flex-direction: column !important;
+
+    min-height: auto !important;
+    height: auto !important;
+
+    padding: 36px 22px 55px !important;
+    gap: 35px !important;
+    overflow: visible !important;
+  }
+
+  .hero h1,
+  .hero-title {
+    font-size: clamp(50px, 13vw, 78px) !important;
+    line-height: 0.95 !important;
+  }
+
+  .hero-media,
+  .hero-image {
+    width: 100% !important;
+    max-width: 620px !important;
+    height: auto !important;
+    max-height: none !important;
+    margin: 0 auto !important;
+  }
+
+  .hero-media img,
+  .hero-image img,
+  img.hero-image {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+  }
+}
