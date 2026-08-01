@@ -87,7 +87,7 @@ body.viewer-open{overflow:hidden}
 
   .hero-media,
   .hero-image {
-    width: 86%;
+    width: 95%;
     max-width: 680px;
     justify-self: end;
     margin-right: clamp(20px, 3vw, 60px);
