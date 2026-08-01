@@ -128,7 +128,7 @@ body.viewer-open{overflow:hidden}
   img.hero-image {
     width: auto !important;
     height: auto !important;
-    max-width: 620px !important;
+    max-width: 520px !important;
     max-height: 72vh !important;
     object-fit: contain !important;
     object-position: center !important;
